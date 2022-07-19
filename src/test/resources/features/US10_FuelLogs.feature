@@ -7,13 +7,13 @@ Feature: Vehicle Fuel Logs
     When I click the vehicle fuel logs under the Fleet button
     Then I should be able to on vehicle fuel logs page
 
-
+    @smoke
     Scenario: Truck driver should access fuel logs
       When I am on vehicle fuel logs as a truck driver
       Then I should be able to  access to vehicle fuel logs page
 
 
-  @wip
+      @smoke
       Scenario: Truck driver should be able to create fuel logs
       When I click create a vehicle fuel logs button on the top right
       And Create Vehicle Fuel Logs page opens
@@ -30,14 +30,14 @@ Feature: Vehicle Fuel Logs
         And click save and close button
       Then I should be able to creat vehicle fuel logs
 
-
+        @smoke
         Scenario:User should be able to cancel on vehicle create page
           When I click create a vehicle fuel logs button on the top right
           And Create Vehicle Fuel Logs page opens
           And I click cancel button
           Then I should be able cancel
 
-          @try
+          @smoke
           Scenario: User should be able to edit any vehicle fuel logs
           When I click any vehicle on the fuel logs
           And information page about that vehicle should open
