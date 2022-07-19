@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------
+Test set: Vehicle Fuel Logs #2
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 110.776 s <<< FAILURE! - in Vehicle Fuel Logs #2
+Vehicle Fuel Logs #2.Truck driver should access fuel logs  Time elapsed: 16.476 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="dropdown user-menu-dropdown" id="user-menu">...</li> is not clickable at point (1464, 16). Other element would receive the click: <div class="loader-mask shown">...</div>
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JC8JH0AI', ip: '10.0.0.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\cfhol\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65aa08156a8571900e33d88b896ae651
+
+Vehicle Fuel Logs #2.Truck driver should be able to create fuel logs  Time elapsed: 14.55 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='prependedInput']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JC8JH0AI', ip: '10.0.0.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\cfhol\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65aa08156a8571900e33d88b896ae651
+*** Element info: {Using=xpath, value=//input[@id='prependedInput']}
+
+Vehicle Fuel Logs #2.User should be able to edit any vehicle fuel logs  Time elapsed: 10.347 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/entity/update/Extend_Entity_VehicleFuelLogs/item/191?grid%5Bcustom-entity-grid%5D=i%3D1%26p%3D25%26c%3Did0.OdometerValue1.Liter1.PricePerLiter1.TotalPrice1.Date1.Purchaser1.InvoiceReference1.Vendor1%26v%3D__all__%26a%3Dgrid%26g%255Bclass_name%255D%3DExtend%255CEntity%255CVehicleFuelLogs" class="btn back icons-holder-text edit-button main-group" title="Edit Vehicle Fuel Logs">...</a> is not clickable at point (867, 137). Other element would receive the click: <div class="loader-mask shown">...</div>
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JC8JH0AI', ip: '10.0.0.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\cfhol\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65aa08156a8571900e33d88b896ae651
+
+Vehicle Fuel Logs #2.User should be able to edit any vehicle fuel logs  Time elapsed: 0 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="dropdown user-menu-dropdown" id="user-menu">...</li> is not clickable at point (1464, 16). Other element would receive the click: <div class="loader-mask shown">...</div>
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JC8JH0AI', ip: '10.0.0.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\cfhol\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65aa08156a8571900e33d88b896ae651
+
+Vehicle Fuel Logs #2.User should be able to delete  Time elapsed: 21.728 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='prependedInput']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-JC8JH0AI', ip: '10.0.0.173', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\cfhol\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65aa08156a8571900e33d88b896ae651
+*** Element info: {Using=xpath, value=//input[@id='prependedInput']}
+
+Vehicle Fuel Logs #2.User should be able attach valid file  Time elapsed: 15.528 s  <<< FAILURE!
+java.lang.AssertionError
+
