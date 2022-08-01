@@ -13,6 +13,7 @@ public class LoginPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
    @FindBy(xpath = "//input[@id='prependedInput']")
     public WebElement username;
 

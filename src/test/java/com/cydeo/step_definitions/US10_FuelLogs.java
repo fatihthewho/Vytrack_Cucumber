@@ -3,10 +3,9 @@ package com.cydeo.step_definitions;
 import com.cydeo.pages.CreateFuelLog;
 import com.cydeo.pages.Entry;
 import com.cydeo.pages.FuelLogs;
-import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import com.cydeo.utilities.Vytrack;
-import io.cucumber.java.en.And;
+import com.google.common.collect.Maps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,7 +15,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class US10_FuelLogs {
 
@@ -24,6 +25,7 @@ public class US10_FuelLogs {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
 
     CreateFuelLog createFuelLog=new CreateFuelLog();
+
 
     Entry entry = new Entry();
 
@@ -70,26 +72,19 @@ public class US10_FuelLogs {
     public void create_vehicle_fuel_logs_page_opens() {
         wait.until(ExpectedConditions.visibilityOf(createFuelLog.odometerInput));
     }
-    @And("I enter valid informations for new vehicle")
-    public void iEnterValidInformationsForNewVehicle(List<String> list) throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(createFuelLog.odometerInput));
-        List<WebElement> info= Driver.getDriver().findElements(By.xpath("//div[contains(@class,'control-group')]//input"));
-        info.remove(4);
-        info.remove(8);
-        info.remove(8);
 
-        for (int i = 0; i <info.size() ; i++) {
-            info.get(i).sendKeys(list.get(i));
 
-        }
+    @When("I enter valid informations for new vehicle")
+    public void i_enter_valid_informations_for_new_vehicle(Map<String,String> inputMap) {
 
+            createFuelLog.createEntry(inputMap);
 
     }
 
     @When("click save and close button")
     public void click_save_and_close_button() throws InterruptedException {
         WebElement mask= Driver.getDriver().findElement(By.xpath("//div[@id=\"oro-dropdown-mask\"]"));
-        mask.click();
+
         wait.until(ExpectedConditions.invisibilityOf(mask));
         createFuelLog.savebutton.click();
 
@@ -112,6 +107,8 @@ public class US10_FuelLogs {
         wait.until(ExpectedConditions.elementToBeClickable(createFuelLog.cancelButton));
 
         createFuelLog.cancelButton.click();
+
+        
 
     }
     @Then("I should be able cancel")
@@ -259,9 +256,4 @@ public class US10_FuelLogs {
         }
         Assert.assertEquals(checklist,checklist2);
     }
-
-
-
-
-
-}
+    }
